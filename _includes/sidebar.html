@@ -1,8 +1,8 @@
 <!-- The Side Bar -->
 
-<div id="sidebar" class="d-flex flex-column align-items-center">
-  <div class="profile-wrapper">
-    <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
+<div id="sidebar" class="d-flex flex-column align-items-end">
+  <div class="profile-wrapper text-center">
+    <!-- <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
       {% if site.avatar != empty and site.avatar %}
         {% capture avatar_url %}
             {% if site.avatar contains '://' %}
@@ -13,18 +13,18 @@
               {{ site.avatar | relative_url }}
             {% endif %}
           {% endcapture %}
-        <img src="{{ avatar_url | strip }}" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
+        <img src="{{ avatar_url | strip }}" width="112" height="112" alt="avatar" class="mx-auto d-block" onerror="this.style.display='none'">
       {% endif %}
-    </a>
+    </a> -->
 
     <div class="site-title">
       <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
     </div>
-    <div class="site-subtitle fst-italic">{{ site.tagline }}</div>
+    <div class="site-subtitle">{{ site.tagline }}</div>
   </div>
   <!-- .profile-wrapper -->
 
-  <ul class="nav flex-column flex-grow-1 w-100 ps-0">
+  <ul class="nav flex-column flex-grow-1 w-100 ps-0 text-center">
     <!-- home -->
     <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
       <a href="{{ '/' | relative_url }}" class="nav-link">
@@ -47,7 +47,7 @@
   </ul>
   <!-- ul.nav.flex-column -->
 
-  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
+  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100 justify-content-center text-center">
     {% unless site.theme_mode %}
       <button class="mode-toggle btn" aria-label="Switch Mode">
         <i class="fas fa-adjust"></i>
