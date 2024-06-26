@@ -1,11 +1,7 @@
 ---
 ---
 
-@import 'main
-{%- if jekyll.environment == 'production' -%}
-  .bundle
-{%- endif -%}
-';
+@import '{{ site.theme }}';
 
 /* append your custom style below */
 .site-title {
