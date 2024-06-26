@@ -16,14 +16,14 @@
       {% endif %}
     </a> -->
 
-    <div class="site-title site-title-color-green">
+    <div class="site-title">
       <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
     </div>
     <div class="site-subtitle">{{ site.tagline }}</div>
   </div>
   <!-- .profile-wrapper -->
 
-  <ul class="nav flex-column flex-grow-1 w-100 ps-0 text-center">
+  <ul class="nav flex-column flex-grow-1 w-100 ps-0">
     <!-- home -->
     <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
       <a href="{{ '/' | relative_url }}" class="nav-link">

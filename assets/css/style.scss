@@ -4,10 +4,3 @@
 @import '{{ site.theme }}';
 
 /* append your custom style below */
-#sidebar .site-title-color-green {
-    a {
-      @extend %clickable-transition;
-      @extend %sidebar-link-hover;
-      color: green;
-    }
-  }
