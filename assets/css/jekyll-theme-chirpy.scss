@@ -1,0 +1,25 @@
+---
+---
+
+@import 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+.site-title {
+  font-weight: 900;
+  font-size: 1.75rem;
+  line-height: 1.2;
+  letter-spacing: 0.25px;
+  color: rgba(134, 133, 133, 0.99);
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+
+  a {
+    @extend %clickable-transition;
+    @extend %sidebar-link-hover;
+    color: green;
+  }
+}
